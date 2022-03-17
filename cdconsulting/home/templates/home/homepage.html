@@ -1,0 +1,246 @@
+{%extends 'layout.html'%}
+{%load static%}
+{%block title%}
+<title>Homepage</title>
+{%endblock title%}
+{% block main_content%}
+<div class="mt-5">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/2.jpg'%}" class="d-block w-100" alt="logo">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/3.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/1.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+<div id="aboutUs">
+<div class="abt">
+  <div class="about">
+    <h1>About Us</h1>
+    <p> Our Consulting Firm Was establish in 2020 during the lockdown Period. We provide all facilities<br>
+    like tax clearance, Registration of new Firm, Pan Card etc. We try to provide all the facilities<br> in a minimum
+    time PeriodAccounting is the process of recording financial transactions<br> pertaining to a business.
+      The accounting process includes summarizing, analyzing, and <br>reporting these transactions to oversight agencies,
+      regulators, and tax collection entities.<br><span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
+        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.<br> Fusce luctus vestibulum augue ut aliquet.
+        Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.<br> In at libero sed nunc venenatis imperdiet sed
+        ornare turpis. Donec vitae dui eget tellus gravida venenatis.<br>
+        Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button class="bg-primary text-light" onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
+  <div class="img-abt">
+    <img src="{% static 'images/consulting.jpg'%}">
+  </div>
+</div>
+ <div class="container-fluid mb-5" id="services" style="position:absolute; top:150%;">
+    <div class="text-center mt-5">
+        <h1>Our Services</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services settings">
+                    <div class="icon"> <img src="https://i.imgur.com/6NKPrhO.png"> </div>
+                    <h4>Balance Sheet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services speedup">
+                    <div class="icon"> <img src="https://i.imgur.com/KMbnpFF.png"> </div>
+                    <h4>Pan Card Registration</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services privacy">
+                    <div class="icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
+                    <h4>Company Registration</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services backups">
+                    <div class="icon"> <img src="https://i.imgur.com/vdH9LKi.png"> </div>
+                    <h4></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services ssl">
+                    <div class="icon"> <img src="https://i.imgur.com/v6OnUqu.png"> </div>
+                    <h4>SSL secured</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services database">
+                    <div class="icon"> <img src="https://i.imgur.com/VzjZw9M.png"> </div>
+                    <h4>Database</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="teams">
+  <div class="container-fluid px-5 py-5 mt-5" style="position:absolute; top:250%;">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center mb-5">
+            <h1 id="heading" class="mb-0">Our creative team</h1> <small id="heading0">Creative Thinking For Business PSD Template</small>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="card text-center rounded-0 border-0" id="card1">
+                <div class="hex-img mt-5 mb-4"> <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/117336860_715369722356144_5750847618373046555_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9ZCXuzSlq88AX9Nll3W&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-d78CVTzOq0Brc9HZi1yZWhs5jydwcvdA91c6lw2Lo0g&oe=625AD353" x="-25" width="150" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img1)" />
+                    </svg> </div>
+                <h2 class="card-name">Dipesh Karki</h2>
+                <p class="position">Founder & CEO</p>
+                <div class="row mx-5 mb-5 mt-3 justify-content-center">
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-facebook"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-twitter"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-linkedin"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-pinterest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="card text-center rounded-0 border-0" id="card2">
+                <div class="hex-img mt-5 mb-4"> <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="img2" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/275879672_140609005138868_1605372001935411900_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5A8xi-1OAeMAX-SOxcK&tn=LBpAnG-kNYZDUgT-&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8jpbC5OvRiCRHU48ppgZA1Fa5-j6XXHJAcmMIEjr74MQ&oe=62385100" x="-25" width="150" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img2)" />
+                    </svg> </div>
+                <h2 class="card-name">Anil Tiwari</h2>
+                <p class="position">Founder & CEO</p>
+                <div class="row mx-5 mb-5 mt-3 justify-content-center">
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-facebook"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-twitter"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-linkedin"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-pinterest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="card text-center rounded-0 border-0" id="card3">
+                <div class="hex-img mt-5 mb-4"> <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="img3" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/117336860_715369722356144_5750847618373046555_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9ZCXuzSlq88AX9Nll3W&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-d78CVTzOq0Brc9HZi1yZWhs5jydwcvdA91c6lw2Lo0g&oe=625AD353" x="-25" width="150" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img3)" />
+                    </svg> </div>
+                <h2 class="card-name">Dipesh Karki</h2>
+                <p class="position">Founder & CEO</p>
+                <div class="row mx-5 mb-5 mt-3 justify-content-center">
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-facebook"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-twitter"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-linkedin"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-pinterest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="card text-center rounded-0 border-0" id="card4">
+                <div class="hex-img mt-5 mb-4"> <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="img4" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/275879672_140609005138868_1605372001935411900_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5A8xi-1OAeMAX-SOxcK&tn=LBpAnG-kNYZDUgT-&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8jpbC5OvRiCRHU48ppgZA1Fa5-j6XXHJAcmMIEjr74MQ&oe=62385100" x="-25" width="150" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img4)" />
+                    </svg> </div>
+                <h2 class="card-name">Anil Tiwari</h2>
+                <p class="position">Founder & CEO</p>
+                <div class="row mx-5 mb-5 mt-3 justify-content-center">
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-facebook"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-twitter"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-linkedin"></div>
+                    </div>
+                    <div class="col-3 px-0 py-1">
+                        <div class="py-3 fa fa-pinterest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+{% endblock main_content%}

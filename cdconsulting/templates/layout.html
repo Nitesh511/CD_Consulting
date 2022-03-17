@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <style>
+        .abt{
+        margin-top:85px;
+        position:absolute;
+        display:flex;
+        left:10%;
+        }
+        .abt .about h1{
+        font-size:50px;
+        font-weight:600;
+        }
+        .abt .about p{
+        font-size:18px;
+        font-weight:500;
+        margin-top:20px;
+        }
+        .abt .about button{
+        font-size:18px;
+        font-weight:500;
+        width:220px;
+        border-radius:20px;
+        border:5px;
+
+        }
+        .img-abt img{
+        position:absolute;
+        width:400px;
+        left:110%;
+        margin-top:-60px;
+        }
+        #more {display: none;}
+        .feat{
+        position:absolute;
+        display:flex;
+        top:150%;
+        left:40%;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+<!--        body {-->
+<!--            background: #eee;-->
+<!--            font-family: 'Ubuntu', sans-serif-->
+<!--        }-->
+
+        .box {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .our-services {
+            margin-top: 75px;
+            padding-bottom: 30px;
+            padding: 0 60px;
+            min-height: 198px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all .4s ease-in-out;
+            box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+        }
+
+        .our-services .icon {
+            margin-bottom: -21px;
+            transform: translateY(-50%);
+            text-align: center
+        }
+
+        .our-services:hover h4,
+        .our-services:hover p {
+            color: #fff
+        }
+
+        .speedup:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+        }
+
+        .settings:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+        }
+
+        .privacy:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+        }
+
+        .backups:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+        }
+
+        .ssl:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+        }
+
+        .database:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+* {
+    padding: 0;
+    margin: 0
+}
+
+
+#heading,
+#heading0 {
+    color: #ffffff
+}
+
+.card {
+    background-color: #E8EAF6;
+    padding-top: 0px;
+    cursor: pointer
+}
+
+.card-name:hover {
+    color: #424242
+}
+
+#card1 {
+    border-top: 4px solid #3D5AFE !important;
+    transition: 0.5s
+}
+
+#card1:hover {
+    box-shadow: 0 0 2px 2px #3D5AFE;
+    transition: 0.5s
+}
+
+#card2 {
+    border-top: 4px solid #00E676 !important;
+    transition: 0.5s
+}
+
+#card2:hover {
+    box-shadow: 0 0 2px 2px #00E676;
+    transition: 0.5s
+}
+
+#card3 {
+    border-top: 4px solid #AB47BC !important;
+    transition: 0.5s
+}
+
+#card3:hover {
+    box-shadow: 0 0 2px 2px #AB47BC;
+    transition: 0.5s
+}
+
+#card4 {
+    border-top: 4px solid #FBC02D !important;
+    transition: 0.5s
+}
+
+#card4:hover {
+    box-shadow: 0 0 2px 2px #FBC02D;
+    transition: 0.5s
+}
+
+.hex-icon {
+    background-color: black;
+    width: 30%
+}
+
+.fa {
+    color: white;
+    background-color: black;
+    width: 40px;
+    transition: 0.2s
+}
+
+.fa:hover {
+    opacity: 1;
+    transition: 0.2s
+}
+
+.fa-facebook {
+    background-color: #4267B2;
+    opacity: 0.8
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+    opacity: 0.8
+}
+
+.fa-linkedin {
+    background-color: #0077B5;
+    opacity: 0.8
+}
+
+.fa-pinterest {
+    background-color: #E60023;
+    opacity: 0.8
+}
+
+svg {
+    height: 200px;
+    width: 240px
+}
+.teams .container-fluid {
+    background-color: #000000
+}
+
+#heading,
+#heading0 {
+    color: #ffffff
+}
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   {% block title %}
+    {{section.title}}
+    {% endblock title%}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid p-0">
+ {% include 'header.html' %}
+    {% block main_content %}
+    {% endblock main_content %}
+    {% include 'footer.html' %}
+
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script src="https://use.fontawesome.com/5ebe268173.js"></script>
+</body>
+</html>
